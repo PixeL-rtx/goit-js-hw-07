@@ -40,8 +40,9 @@ function clean() {
 
 
 function createBoxes(amount) {
-
+  
   clean();
+  const fragment = document.createDocumentFragment();
 
   for (let i = 0; i < amount; i++) {
     const box  = document.createElement("div");
@@ -49,7 +50,8 @@ function createBoxes(amount) {
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
 
-    boxes.append(box);
+    fragment.append(box);
     size += 10;
   }
+  boxes.append(fragment);
 }

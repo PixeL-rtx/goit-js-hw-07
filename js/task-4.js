@@ -9,6 +9,6 @@ function handleSubmit(event) {
     if (login === "" || password === "") {
         return console.log("All form fields must be filled in");
     }
-    console.log(`Login: ${login}, Password: ${password}`);
+    console.log({login, password});
     form.reset();
 }

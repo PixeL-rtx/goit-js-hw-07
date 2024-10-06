@@ -19,7 +19,7 @@ body {
   list-style: none;
 
 }
-.gallerys {
+.gallery-list {
   width: calc((100% - 2 * 10px) / 3);
   margin: 5px;
 }
